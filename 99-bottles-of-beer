@@ -1,0 +1,13 @@
+def beer(x)
+  x - 1
+end
+
+99.downto(1) do |x|
+  if x >= 3
+    puts x.to_s + ' bottles of beer on the wall,' + x.to_s + ' bottles of beer! Take one down, pass it around,' + beer(x).to_s + ' bottles of beer on the wall! '
+  elsif x == 2
+    puts x.to_s + ' bottles of beer on the wall,' + x.to_s + ' bottles of beer! Take one down, pass it around,' + beer(x).to_s + ' bottle of beer on the wall! '
+  elsif x == 1
+    puts x.to_s + 'bottle of beer on the wall,' + x.to_s + 'bottle of beer! Take one down, pass it around, no more bottles of beer on the wall. No more bottles of beer on the wall, no more bottles of beer. Go to the store and buy some more, 99 bottles of beer on the wall.'
+end
+end
