@@ -23,6 +23,9 @@ class Hospital < Building
   def make_sound
     puts "ambulance siren WOO WOO"
   end
+  def self.make_other_sound
+    puts "*crying baby*"
+  end
 end
 
 h1 = Hospital.new(700, 400, 4, 8, ["wood", "metal"], "blue", true)
